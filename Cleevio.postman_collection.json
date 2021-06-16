@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "e5325db5-25cd-40d9-8ba3-5ca2bc9386d8",
+		"name": "Cleevio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateWatch - json request body",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Some title\",\n    \"price\": 0, \n    \"description\": \"A watch with a water fountain picture\",\n    \"fountain\": \"R0lGODlhAQABAIAAAAUEBA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/watches",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"watches"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateWatch - xml request body",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<Watch>\n    <title>Some XML title</title>\n    <description>Some description</description>\n    <price>10</price>\n    <fountain>R0lGODlhAQABAIAAAAUEBA</fountain>\n</Watch>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/watches",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"watches"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetWatchById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	]
+}
